@@ -1,0 +1,37 @@
+{
+  "ServiceID": 48,
+  "UserID": 48,
+  "UserPriority": 1,
+  "StartDate": "2020-4-1",
+  "Time": "10-20-00",
+  "Period": 20,
+  "RepeatEvery": [
+    "Su",
+    "Tu"
+  ],
+  "EndDate": "2020-4-30",
+  "Rules": [
+    {
+      "Ser_ID": 48,
+      "R_ID": 1,
+      "Priority": 3,
+      "RLoc": "Office3",
+      "conditionGroup": [
+        {
+          "DeviceName": "Office3_BAOccupancy",
+          "value": "True"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Office3_BALight",
+          "value": "False"
+        },
+        {
+          "DeviceName": "Office3_BWindow",
+          "value": "True"
+        }
+      ]
+    }
+  ]
+}

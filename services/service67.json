@@ -1,0 +1,60 @@
+{
+  "ServiceID": 67,
+  "UserID": 67,
+  "UserPriority": 1,
+  "StartDate": "2020-4-1",
+  "Time": "10-20-00",
+  "Period": 20,
+  "RepeatEvery": [
+    "Tu"
+  ],
+  "EndDate": "2020-4-30",
+  "Rules": [
+    {
+      "Ser_ID": 67,
+      "R_ID": 1,
+      "Priority": 3,
+      "RLoc": "Office3",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab1_BInoffice",
+          "value": "True"
+        },
+        {
+          "DeviceName": "Lab1_ITimetoLec",
+          "operation": "<",
+          "value": 10
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab1_BLight",
+          "value": "True"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 67,
+      "R_ID": 2,
+      "Priority": 3,
+      "RLoc": "Office3",
+      "conditionGroup": [
+        {
+          "DeviceName": "Office3_BInoffice",
+          "value": "True"
+        },
+        {
+          "DeviceName": "Office3_ITimetoLec",
+          "operation": "<",
+          "value": 5
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Office3_BAlarm",
+          "value": "True"
+        }
+      ]
+    }
+  ]
+}

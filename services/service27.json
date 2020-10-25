@@ -1,0 +1,34 @@
+{
+  "ServiceID": 27,
+  "UserID": 27,
+  "UserPriority": 1,
+  "StartDate": "2020-4-1",
+  "Time": "10-20-00",
+  "Period": 20,
+  "RepeatEvery": [
+    "Su",
+    "Tu"
+  ],
+  "EndDate": "2020-4-30",
+  "Rules": [
+    {
+      "Ser_ID": 27,
+      "R_ID": 1,
+      "Priority": 3,
+      "RLoc": "Office5",
+      "conditionGroup": [
+        {
+          "DeviceName": "Office5_ICO2",
+          "operation": ">",
+          "value": 1000
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Office5_BWindow",
+          "value": "True"
+        }
+      ]
+    }
+  ]
+}

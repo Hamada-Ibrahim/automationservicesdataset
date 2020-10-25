@@ -1,0 +1,42 @@
+{
+  "ServiceID": 32,
+  "UserID": 32,
+  "UserPriority": 1,
+  "StartDate": "2020-4-1",
+  "Time": "10-20-00",
+  "Period": 20,
+  "RepeatEvery": [
+    "Su",
+    "Tu"
+  ],
+  "EndDate": "2020-4-30",
+  "Rules": [
+    {
+      "Ser_ID": 32,
+      "R_ID": 1,
+      "Priority": 3,
+      "RLoc": "Office2",
+      "conditionGroup": [
+        {
+          "DeviceName": "Office2_IInTemperature",
+          "operation":">",
+          "value": 30
+        },
+        {
+          "DeviceName": "Office2_BInfrared",
+          "value": "True"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Office2_BAC",
+          "value": "True"
+        },
+        {
+          "DeviceName": "Office2_IACThermostat",
+          "value": 20
+        }
+      ]
+    }
+  ]
+}

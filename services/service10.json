@@ -1,0 +1,51 @@
+{
+  "ServiceID": 10,
+  "UserID": 10,
+  "UserPriority": 1,
+  "StartDate": "2020-4-1",
+  "Time": "10-20-00",
+  "Period": 20,
+  "RepeatEvery": [
+    "Su",
+    "Tu"
+  ],
+  "EndDate": "2020-4-30",
+  "Rules": [
+    {
+      "Ser_ID": 10,
+      "R_ID": 1,
+      "Priority": 3,
+      "RLoc": "Hall2",
+      "conditionGroup": [
+        {
+          "DeviceName": "Hall2_BDangerous",
+          "value": "True"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Hall2_BSpeaker",
+          "value": "True"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 10,
+      "R_ID": 2,
+      "Priority": 3,
+      "RLoc": "Hall2",
+      "conditionGroup": [
+        {
+          "DeviceName": "Hall2_BInoffice",
+          "value": "True"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Hall2_BSpeaker",
+          "value": "True"
+        }
+      ]
+    }
+  ]
+}

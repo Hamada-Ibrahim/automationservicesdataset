@@ -1,0 +1,32 @@
+{
+  "ServiceID": 78,
+  "UserID": 78,
+  "UserPriority": 1,
+  "StartDate": "2020-4-20",
+  "Time": "10-20-00",
+  "Period": 20,
+  "RepeatEvery": [
+    "Su"
+  ],
+  "EndDate": "2020-4-30",
+  "Rules": [
+    {
+      "Ser_ID": 78,
+      "R_ID": 1,
+      "Priority": 3,
+      "RLoc": "Lab4",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab4_IInfrared",
+          "value": "True"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab4_BLabOccupancy",
+          "value": "True"
+        }
+      ]
+    }
+  ]
+}

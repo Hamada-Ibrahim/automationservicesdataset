@@ -1,0 +1,56 @@
+{
+  "ServiceID": 60,
+  "UserID": 60,
+  "UserPriority": 1,
+  "StartDate": "2020-1-1",
+  "Time": "10-30-00",
+  "Period": 80,
+  "RepeatEvery": [
+    "Su",
+    "We"
+  ],
+  "EndDate": "2020-4-30",
+  "Rules": [
+    {
+      "Ser_ID": 60,
+      "R_ID": 1,
+      "Priority": 3,
+      "RLoc": "Lab2",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab2_IEnergycost",
+          "operation": ">=",
+          "value": 20000
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab2_BHighpower",
+          "value": "True"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 60,
+      "R_ID": 2,
+      "Priority": 2,
+      "RLoc": "Lab2",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab2_BHighpower",
+          "value": "True"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab2_BAC",
+          "value": "False"
+        },
+        {
+          "DeviceName": "Lab2_BHeater",
+          "value": "False"
+        }
+      ]
+    }
+  ]
+}

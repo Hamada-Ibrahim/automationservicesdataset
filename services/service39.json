@@ -1,0 +1,41 @@
+{
+  "ServiceID": 39,
+  "UserID": 39,
+  "UserPriority": 1,
+  "StartDate": "2020-4-1",
+  "Time": "10-20-00",
+  "Period": 20,
+  "RepeatEvery": [
+    "Su",
+    "Tu"
+  ],
+  "EndDate": "2020-4-30",
+  "Rules": [
+    {
+      "Ser_ID": 39,
+      "R_ID": 1,
+      "Priority": 3,
+      "RLoc": "Office4",
+      "conditionGroup": [
+        {
+          "DeviceName": "Office4_BFireSensor",
+          "value": "True"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Office4_BFirealarm",
+          "value": "True"
+        },
+        {
+          "DeviceName": "Office4_BOfficepower",
+          "value": "False"
+        },
+        {
+          "DeviceName": "Office4_BFireextinguisher",
+          "value": "True"
+        }
+      ]
+    }
+  ]
+}

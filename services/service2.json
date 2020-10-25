@@ -1,0 +1,87 @@
+{
+  "ServiceID": 2,
+  "UserID": 2,
+  "UserPriority": 1,
+  "StartDate": "2020-4-1",
+  "Time": "10-20-00",
+  "Period": 20,
+  "RepeatEvery": [
+    "Su",
+    "Tu"
+  ],
+  "EndDate": "2020-4-30",
+  "Rules": [
+    {
+      "Ser_ID": 2,
+      "R_ID": 1,
+      "Priority": 3,
+      "RLoc": "Office2",
+      "conditionGroup": [
+        {
+          "DeviceName": "Office2_IInoffice",
+          "value": "True"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Office2_BMotionstate",
+          "value": "True"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 2,
+      "R_ID": 2,
+      "Priority": 2,
+      "RLoc": "Office2",
+      "conditionGroup": [
+        {
+          "DeviceName": "Office2_BMotionstate",
+          "value": "True"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Office2_BCamera",
+          "value": "True"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 2,
+      "R_ID": 3,
+      "Priority": 2,
+      "RLoc": "Office2",
+      "conditionGroup": [
+        {
+          "DeviceName": "Office2_IInoffice",
+          "value": "True"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Office2_BDoor",
+          "value": "True"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 2,
+      "R_ID": 4,
+      "Priority": 2,
+      "RLoc": "Office2",
+      "conditionGroup": [
+        {
+          "DeviceName": "Office2_IInoffice",
+          "value": "True"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Office2_BWindow",
+          "value": "True"
+        }
+      ]
+    }
+  ]
+}

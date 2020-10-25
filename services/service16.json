@@ -1,0 +1,62 @@
+{
+  "ServiceID": 16,
+  "UserID": 16,
+  "UserPriority": 1,
+  "StartDate": "2020-4-1",
+  "Time": "10-20-00",
+  "Period": 20,
+  "RepeatEvery": [
+    "Su",
+    "Tu"
+  ],
+  "EndDate": "2020-4-30",
+  "Rules": [
+    {
+      "Ser_ID": 16,
+      "R_ID": 1,
+      "Priority": 3,
+      "RLoc": "Hall5",
+      "conditionGroup": [
+        {
+          "DeviceName": "Hall5_IInHumidity",
+          "operation": "<=",
+          "value": "50"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Hall5_BFan",
+          "value": "True"
+        }
+      ]
+    },
+    {
+     "Ser_ID": 16,
+      "R_ID": 2,
+      "Priority": 3,
+      "RLoc": "Hall5",
+      "conditionGroup": [
+        {
+          "DeviceName": "Hall5_IInTemperature",
+          "operation": ">=",
+          "value": "70"
+        },
+        {
+          "DeviceName": "Hall5_IOutTemperature",
+          "operation": "<=",
+          "value": "65"
+        },
+        {
+          "DeviceName": "Hall5_BAC",
+          "value": "False"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Hall5_BFan",
+          "value": "True"
+        }
+      ]
+    } 
+  ]
+}

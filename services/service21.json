@@ -1,0 +1,53 @@
+{
+  "ServiceID": 21,
+  "UserID": 21,
+  "UserPriority": 1,
+  "StartDate": "2020-4-1",
+  "Time": "10-20-00",
+  "Period": 20,
+  "RepeatEvery": [
+    "Su",
+    "Tu"
+  ],
+  "EndDate": "2020-4-30",
+  "Rules": [
+    {
+      "Ser_ID": 21,
+      "R_ID": 1,
+      "Priority": 3,
+      "RLoc": "Hall3",
+      "conditionGroup": [
+        {
+          "DeviceName": "Hall3_ILux",
+          "operation": "<=",
+          "value": "1500"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Hall3_BCurtain",
+          "value": "True"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 21,
+      "R_ID": 2,
+      "Priority": 3,
+      "RLoc": "Hall3",
+      "conditionGroup": [
+        {
+          "DeviceName": "Hall3_ILux",
+          "operation": ">=",
+          "value": "2000"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Hall3_BCurtain",
+          "value": "False"
+        }
+      ]
+    }
+  ]
+}

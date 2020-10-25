@@ -1,0 +1,37 @@
+{
+  "ServiceID": 73,
+  "UserID": 73,
+  "UserPriority": 1,
+  "StartDate": "2020-4-10",
+  "Time": "10-20-00",
+  "Period": 60,
+  "RepeatEvery": [
+    "Mo"
+  ],
+  "EndDate": "2020-4-30",
+  "Rules": [
+    {
+      "Ser_ID": 73,
+      "R_ID": 1,
+      "Priority": 3,
+      "RLoc": "Hall1",
+      "conditionGroup": [
+        {
+          "DeviceName": "Hall1_IInTemperature",
+          "operation": ">",
+          "value": 28
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Hall1_BDev22",
+          "value": "False"
+        },
+        {
+          "DeviceName": "Hall1_BAC",
+          "value": "True"
+        }
+      ]
+    }
+  ]
+}

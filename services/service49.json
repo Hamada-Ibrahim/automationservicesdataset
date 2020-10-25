@@ -1,0 +1,37 @@
+{
+  "ServiceID": 49,
+  "UserID": 49,
+  "UserPriority": 1,
+  "StartDate": "2020-3-1",
+  "Time": "10-00-00",
+  "Period": 30,
+  "RepeatEvery": [
+    "Mon",
+    "Tu"
+  ],
+  "EndDate": "2020-4-3",
+  "Rules": [
+    {
+      "Ser_ID": 49,
+      "R_ID": 1,
+      "Priority": 3,
+      "RLoc": "Office1",
+      "conditionGroup": [
+        {
+          "DeviceName": "Office1_BInoffice",
+          "value": "True"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Office1_BWFO",
+          "value": "True"
+        },
+        {
+          "DeviceName": "Office1_BWindow",
+          "value": "True"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "ServiceID": 59,
+  "UserID": 59,
+  "UserPriority": 1,
+  "StartDate": "2020-2-10",
+  "Time": "9-00-00",
+  "Period": 80,
+  "RepeatEvery": [
+    "Su",
+    "Sa"
+  ],
+  "EndDate": "2020-3-10",
+  "Rules": [
+    {
+      "Ser_ID": 59,
+      "R_ID": 1,
+      "Priority": 3,
+      "RLoc": "Lab3",
+      "conditionGroup": [
+        {
+          "function": {
+            "LHS": ["Lab3_ITime","",""],
+            "RHS": ["Hall3_ISectionstarttime","10","+"],
+            "operator": "="
+                      }
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab3_BDoor",
+          "value": "False"
+        },
+        {
+          "DeviceName": "Hall3_BStdnotify",
+          "value": "True"
+        }
+      ]
+    }
+  ]
+}

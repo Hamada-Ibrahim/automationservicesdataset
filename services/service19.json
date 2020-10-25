@@ -1,0 +1,51 @@
+{
+  "ServiceID": 19,
+  "UserID": 19,
+  "UserPriority": 1,
+  "StartDate": "2020-4-1",
+  "Time": "10-20-00",
+  "Period": 20,
+  "RepeatEvery": [
+    "Su",
+    "Tu"
+  ],
+  "EndDate": "2020-4-30",
+  "Rules": [
+    {
+      "Ser_ID": 19,
+      "R_ID": 1,
+      "Priority": 3,
+      "RLoc": "Office2",
+      "conditionGroup": [
+        {
+          "DeviceName": "Office2_BCO2",
+          "value": "True"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Office2_BDoor",
+          "value": "True"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 19,
+      "R_ID": 2,
+      "Priority": 3,
+      "RLoc": "Office2",
+      "conditionGroup": [
+        {
+          "DeviceName": "Office2_BInoffice",
+          "value": "False"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Office2_BDoor",
+          "value": "False"
+        }
+      ]
+    }
+  ]
+}

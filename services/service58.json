@@ -1,0 +1,38 @@
+{
+  "ServiceID": 58,
+  "UserID": 58,
+  "UserPriority": 1,
+  "StartDate": "2020-1-1",
+  "Time": "10-00-00",
+  "Period": 120,
+  "RepeatEvery": [
+    "Su",
+    "Mo",
+    "Tu"
+  ],
+  "EndDate": "2020-3-30",
+  "Rules": [
+    {
+      "Ser_ID": 58,
+      "R_ID": 1,
+      "Priority": 3,
+      "RLoc": "Lab1",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab1_BInlab",
+          "value": "True"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab1_BDoor",
+          "value": "False"
+        },
+        {
+          "DeviceName": "Lab1_BWFO",
+          "value": "False"
+        }
+      ]
+    }
+  ]
+}

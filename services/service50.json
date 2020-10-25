@@ -1,0 +1,61 @@
+{
+  "ServiceID": 50,
+  "UserID": 50,
+  "UserPriority": 1,
+  "StartDate": "2020-2-1",
+  "Time": "11-20-00",
+  "Period": 90,
+  "RepeatEvery": [
+    "Tu",
+    "We",
+    "Th"
+  ],
+  "EndDate": "2020-5-30",
+  "Rules": [
+    {
+      "Ser_ID": 50,
+      "R_ID": 1,
+      "Priority": 3,
+      "RLoc": "Office3",
+      "conditionGroup": [
+        {
+          "DeviceName": "Office3_BInoffice",
+          "value": "True"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Office3_BWindow",
+          "value": "True"
+        },
+        {
+          "DeviceName": "Office3_BCoffeemaker",
+          "value": "True"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 50,
+      "R_ID": 2,
+      "Priority": 2,
+      "RLoc": "Office3",
+      "conditionGroup": [
+        {
+          "DeviceName": "Office3_IIntemperature",
+          "operation": ">",
+          "value": 27
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Office3_BAC",
+          "value": "True"
+        },
+        {
+          "DeviceName": "Office3_IACThermostat",
+          "value": 21
+        }
+      ]
+    }
+  ]
+}

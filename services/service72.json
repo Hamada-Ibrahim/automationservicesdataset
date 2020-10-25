@@ -1,0 +1,32 @@
+{
+  "ServiceID": 72,
+  "UserID": 72,
+  "UserPriority": 1,
+  "StartDate": "2020-4-1",
+  "Time": "10-20-00",
+  "Period": 20,
+  "RepeatEvery": [
+    "Mo"
+  ],
+  "EndDate": "2020-4-30",
+  "Rules": [
+    {
+      "Ser_ID": 72,
+      "R_ID": 1,
+      "Priority": 3,
+      "RLoc": "Hall1",
+      "conditionGroup": [
+        {
+          "DeviceName": "Hall1_BInhall",
+          "value": "True"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Hall1_BDev72",
+          "value": "True"
+        }
+      ]
+    }
+  ]
+}

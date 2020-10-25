@@ -1,0 +1,91 @@
+{
+  "ServiceID": 56,
+  "UserID": 56,
+  "UserPriority": 1,
+  "StartDate": "2020-4-10",
+  "Time": "11-00-00",
+  "Period": 120,
+  "RepeatEvery": [
+    "Su"
+  ],
+  "EndDate": "2020-4-20",
+  "Rules": [
+    {
+      "Ser_ID": 56,
+      "R_ID": 1,
+      "Priority": 3,
+      "RLoc": "Hall3",
+      "conditionGroup": [
+        {
+          "function": {
+            "LHS": ["Hall3_ITime","",""],
+            "RHS": ["Hall3_ILecstarttime","10","+"],
+            "operator": "="
+                      }
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Hall3_BDoor",
+          "value": "False"
+        },
+        {
+          "DeviceName": "Hall3_BStdnotify",
+          "value": "True"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 56,
+      "R_ID": 2,
+      "Priority": 3,
+      "RLoc": "Hall3",
+      "conditionGroup": [
+        {
+          "function": {
+            "LHS": ["Hall3_ITime","",""],
+            "RHS": ["Hall3_ILecstarttime","60","+"],
+            "operator": "="
+                      }
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Hall3_BDoor",
+          "value": "True"
+        },
+        {
+          "DeviceName": "Hall3_BBreak",
+          "value": "True"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 56,
+      "R_ID": 3,
+      "Priority": 3,
+      "RLoc": "Hall3",
+      "conditionGroup": [
+        {
+          "DeviceName": "Hall3_ILecendtime",
+          "operation": "<",
+          "value": 10
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Hall3_BDoor",
+          "value": "True"
+        },
+        {
+          "DeviceName": "Hall3_BAC",
+          "value": "False"
+        },
+        {
+          "DeviceName": "Hall3_BWFO",
+          "value": "True"
+        }
+      ]
+    }
+  ]
+}

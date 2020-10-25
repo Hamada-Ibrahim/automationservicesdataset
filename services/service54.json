@@ -1,0 +1,55 @@
+{
+  "ServiceID": 54,
+  "UserID": 54,
+  "UserPriority": 1,
+  "StartDate": "2020-3-1",
+  "Time": "10-00-00",
+  "Period": 180,
+  "RepeatEvery": [
+    "Su",
+    "Mo"
+  ],
+  "EndDate": "2020-3-2",
+  "Rules": [
+    {
+      "Ser_ID": 54,
+      "R_ID": 1,
+      "Priority": 3,
+      "RLoc": "Hall1",
+      "conditionGroup": [
+        {
+          "DeviceName": "Hall1_BLecstate",
+          "value": "True"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Hall1_BStdnotify",
+          "value": "True"
+        },
+        {
+          "DeviceName": "Hall1_BDoctorLabtop",
+          "value": "True"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 54,
+      "R_ID": 2,
+      "Priority": 2,
+      "RLoc": "Hall1",
+      "conditionGroup": [
+        {
+          "DeviceName": "Hall1_BDoctorLabtop",
+          "value": "True"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Hall1_BDatashow",
+          "value": "True"
+        }
+      ]
+    }
+  ]
+}

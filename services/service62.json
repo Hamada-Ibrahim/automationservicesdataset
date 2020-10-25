@@ -1,0 +1,43 @@
+{
+  "ServiceID": 62,
+  "UserID": 62,
+  "UserPriority": 1,
+  "StartDate": "2020-1-1",
+  "Time": "10-00-00",
+  "Period": 30,
+  "RepeatEvery": [
+    "Sa",
+    "Tu",
+    "Th"
+  ],
+  "EndDate": "2020-2-1",
+  "Rules": [
+    {
+      "Ser_ID": 62,
+      "R_ID": 1,
+      "Priority": 3,
+      "RLoc": "Hall3",
+      "conditionGroup": [
+        {
+          "DeviceName": "Hall3_BDoor",
+          "value": "True"
+        },
+        {
+          "DeviceName": "Hall3_BInhall",
+          "value": "True"
+        },
+        {
+          "DeviceName": "Hall3_IDooropenedfor",
+          "operation": ">",
+          "value": 15
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Hall3_BAlarm",
+          "value": "True"
+        }
+      ]
+    }
+  ]
+}

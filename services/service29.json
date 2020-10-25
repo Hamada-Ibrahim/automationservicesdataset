@@ -1,0 +1,33 @@
+{
+  "ServiceID": 29,
+  "UserID": 29,
+  "UserPriority": 1,
+  "StartDate": "2020-4-1",
+  "Time": "10-20-00",
+  "Period": 20,
+  "RepeatEvery": [
+    "Su",
+    "Tu"
+  ],
+  "EndDate": "2020-4-30",
+  "Rules": [
+    {
+      "Ser_ID": 29,
+      "R_ID": 1,
+      "Priority": 3,
+      "RLoc": "Office1",
+      "conditionGroup": [
+        {
+          "DeviceName": "Office1_BDev6",
+          "value": "True"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Office1_BDev2",
+          "value": "True"
+        }
+      ]
+    }
+  ]
+}

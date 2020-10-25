@@ -1,0 +1,38 @@
+{
+  "ServiceID": 43,
+  "UserID": 43,
+  "UserPriority": 1,
+  "StartDate": "2020-4-1",
+  "Time": "10-20-00",
+  "Period": 20,
+  "RepeatEvery": [
+    "Su",
+    "Tu"
+  ],
+  "EndDate": "2020-4-30",
+  "Rules": [
+    {
+      "Ser_ID": 43,
+      "R_ID": 1,
+      "Priority": 3,
+      "RLoc": "Lab4",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab4_BLecTime",
+          "value": "True"
+        },
+        {
+          "DeviceName": "Lab4_IIllumination",
+          "operation":">",
+          "value": 80
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab4_BLight",
+          "value": "False"
+        }
+      ]
+    }
+  ]
+}

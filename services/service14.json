@@ -1,0 +1,89 @@
+{
+  "ServiceID": 14,
+  "UserID": 14,
+  "UserPriority": 1,
+  "StartDate": "2020-4-1",
+  "Time": "10-20-00",
+  "Period": 20,
+  "RepeatEvery": [
+    "Su",
+    "Tu"
+  ],
+  "EndDate": "2020-4-30",
+  "Rules": [
+    {
+      "Ser_ID": 14,
+      "R_ID": 1,
+      "Priority": 3,
+      "RLoc": "Hall4",
+      "conditionGroup": [
+        {
+          "DeviceName": "Hall4_IEnergycost",
+          "operation": ">=",
+          "value": "10000"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Hall4_BHighpower",
+          "value": "True"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 14,
+      "R_ID": 2,
+      "Priority": 3,
+      "RLoc": "Hall4",
+      "conditionGroup": [
+        {
+          "DeviceName": "Hall4_IEnergycost",
+          "operation": ">=",
+          "value": "20000"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Hall4_BHighpower",
+          "value": "True"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 14,
+      "R_ID": 3,
+      "Priority": 3,
+      "RLoc": "Hall4",
+      "conditionGroup": [
+        {
+          "DeviceName": "Hall4_BHighpower",
+          "value": "True"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Hall4_BHeater",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 14,
+      "R_ID": 4,
+      "Priority": 3,
+      "RLoc": "Hall4",
+      "conditionGroup": [
+        {
+          "DeviceName": "Hall4_BHighpower",
+          "value": "True"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Hall4_BAC",
+          "value": "False"
+        }
+      ]
+    } 
+  ]
+}

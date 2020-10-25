@@ -1,0 +1,33 @@
+{
+  "ServiceID": 9,
+  "UserID": 9,
+  "UserPriority": 1,
+  "StartDate": "2020-4-1",
+  "Time": "10-20-00",
+  "Period": 20,
+  "RepeatEvery": [
+    "Su",
+    "Tu"
+  ],
+  "EndDate": "2020-4-30",
+  "Rules": [
+    {
+      "Ser_ID": 9,
+      "R_ID": 1,
+      "Priority": 3,
+      "RLoc": "Lab1",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab1_BAlarm",
+          "value": "True"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab1_BSpeaker",
+          "value": "True"
+        }
+      ]
+    }
+  ]
+}

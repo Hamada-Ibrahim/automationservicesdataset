@@ -1,0 +1,52 @@
+{
+  "ServiceID": 1,
+  "UserID": 1,
+  "UserPriority": 1,
+  "StartDate": "2020-4-1",
+  "Time": "10-20-00",
+  "Period": 20,
+  "RepeatEvery": [
+    "Su",
+    "Tu"
+  ],
+  "EndDate": "2020-4-30",
+  "Rules": [
+    {
+      "Ser_ID": 1,
+      "R_ID": 1,
+      "Priority": 3,
+      "RLoc": "Office5",
+      "conditionGroup": [
+        {
+          "DeviceName": "Office5_IUserstay",
+          "operation": ">=",
+          "value": "30"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Office5_BWFO",
+          "value": "True"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 1,
+      "R_ID": 2,
+      "Priority": 2,
+      "RLoc": "Office5",
+      "conditionGroup": [
+        {
+          "DeviceName": "Office5_BWFO",
+          "value": "True"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Office5_BTextstate",
+          "value": "False"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "ServiceID": 80,
+  "UserID": 80,
+  "UserPriority": 1,
+  "StartDate": "2020-5-1",
+  "Time": "11-00-00",
+  "Period": 30,
+  "RepeatEvery": [
+    "Mo",
+    "Th"
+  ],
+  "EndDate": "2020-5-30",
+  "Rules": [
+    {
+      "Ser_ID": 80,
+      "R_ID": 1,
+      "Priority": 3,
+      "RLoc": "Hall4",
+      "conditionGroup": [
+        {
+          "DeviceName": "Hall4_BMeeting",
+          "value": "True"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Hall4_BCamera",
+          "value": "True"
+        }
+      ]
+    }
+  ]
+}

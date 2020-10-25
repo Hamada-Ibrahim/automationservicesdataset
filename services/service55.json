@@ -1,0 +1,38 @@
+{
+  "ServiceID": 55,
+  "UserID": 55,
+  "UserPriority": 1,
+  "StartDate": "2020-4-10",
+  "Time": "11-00-00",
+  "Period": 120,
+  "RepeatEvery": [
+    "Su",
+    "Th"
+  ],
+  "EndDate": "2020-4-20",
+  "Rules": [
+    {
+      "Ser_ID": 55,
+      "R_ID": 1,
+      "Priority": 3,
+      "RLoc": "Hall2",
+      "conditionGroup": [
+        {
+          "DeviceName": "Hall2_IStdcount",
+          "operation": ">",
+          "value": 100
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Hall2_BAC",
+          "value": "True"
+        },
+        {
+          "DeviceName": "Hall2_IACThermostat",
+          "value": 20
+        }
+      ]
+    }
+  ]
+}

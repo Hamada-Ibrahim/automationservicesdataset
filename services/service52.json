@@ -1,0 +1,68 @@
+{
+  "ServiceID": 52,
+  "UserID": 52,
+  "UserPriority": 1,
+  "StartDate": "2020-1-1",
+  "Time": "12-00-00",
+  "Period": 120,
+  "RepeatEvery": [
+    "Sa",
+    "Mo",
+    "Tu"
+  ],
+  "EndDate": "2020-1-19",
+  "Rules": [
+    {
+      "Ser_ID": 52,
+      "R_ID": 1,
+      "Priority": 3,
+      "RLoc": "Office4",
+      "conditionGroup": [
+        {
+          "DeviceName": "Office4_BInoffice",
+          "value": "False"
+        }
+
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Office4_BLight",
+          "value": "False"
+        },
+        {
+          "DeviceName": "Office4_BAC",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 52,
+      "R_ID": 2,
+      "Priority": 2,
+      "RLoc": "Office4",
+      "conditionGroup": [
+        {
+          "DeviceName": "Office4_BInoffice",
+          "value": "True"
+        },
+        {
+          "DeviceName": "Office4_ITime",
+          "Min": [
+            "13",
+            ">="
+          ],
+          "Max": [
+            "14",
+            "<"
+          ]
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Office4_BStdmeetings",
+          "value": "True"
+        }
+      ]
+    }
+  ]
+}

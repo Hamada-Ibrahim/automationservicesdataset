@@ -1,0 +1,41 @@
+{
+  "ServiceID": 46,
+  "UserID": 46,
+  "UserPriority": 1,
+  "StartDate": "2020-4-1",
+  "Time": "10-20-00",
+  "Period": 20,
+  "RepeatEvery": [
+    "Su",
+    "Tu"
+  ],
+  "EndDate": "2020-4-30",
+  "Rules": [
+    {
+      "Ser_ID": 46,
+      "R_ID": 1,
+      "Priority": 3,
+      "RLoc": "Hall1",
+      "conditionGroup": [
+        {
+          "DeviceName": "Hall1_BOccupancy",
+          "value": "True"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Hall1_BWindow",
+          "value": "True"
+        },
+        {
+          "DeviceName": "Office1_BVoicesystem",
+          "value": "False"
+        },
+        {
+          "DeviceName": "Office1_BWFO",
+          "value": "False"
+        }
+      ]
+    }
+  ]
+}

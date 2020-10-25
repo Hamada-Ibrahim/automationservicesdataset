@@ -1,0 +1,53 @@
+{
+  "ServiceID": 20,
+  "UserID": 20,
+  "UserPriority": 1,
+  "StartDate": "2020-4-1",
+  "Time": "10-20-00",
+  "Period": 20,
+  "RepeatEvery": [
+    "Su",
+    "Tu"
+  ],
+  "EndDate": "2020-4-30",
+  "Rules": [
+    {
+      "Ser_ID": 20,
+      "R_ID": 1,
+      "Priority": 3,
+      "RLoc": "Office3",
+      "conditionGroup": [
+        {
+          "DeviceName": "Office3_ILux",
+          "operation": "<=",
+          "value": "1000"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Office3_BLight",
+          "value": "True"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 20,
+      "R_ID": 2,
+      "Priority": 3,
+      "RLoc": "Office3",
+      "conditionGroup": [
+        {
+          "DeviceName": "Office3_ILux",
+          "operation": ">=",
+          "value": "1200"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Office3_BLight",
+          "value": "False"
+        }
+      ]
+    }
+  ]
+}

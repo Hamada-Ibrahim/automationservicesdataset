@@ -1,0 +1,91 @@
+{
+  "ServiceID": 13,
+  "UserID": 13,
+  "UserPriority": 1,
+  "StartDate": "2020-4-1",
+  "Time": "10-20-00",
+  "Period": 20,
+  "RepeatEvery": [
+    "Su",
+    "Tu"
+  ],
+  "EndDate": "2020-4-30",
+  "Rules": [
+    {
+      "Ser_ID": 13,
+      "R_ID": 1,
+      "Priority": 3,
+      "RLoc": "Lab5",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab5_IInTemperature",
+          "operation": ">=",
+          "value": "71"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab5_BHeater",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 13,
+      "R_ID": 2,
+      "Priority": 3,
+      "RLoc": "Lab5",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab5_IInTemperature",
+          "operation": "<=",
+          "value": "69"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab5_BAC",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 13,
+      "R_ID": 3,
+      "Priority": 3,
+      "RLoc": "Lab5",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab5_IInTemperature",
+          "operation": ">=",
+          "value": "75"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab5_BAC",
+          "value": "True"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 13,
+      "R_ID": 4,
+      "Priority": 3,
+      "RLoc": "Lab5",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab5_IInTemperature",
+          "operation": "<=",
+          "value": "65"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab5_BHeater",
+          "value": "True"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "ServiceID": 79,
+  "UserID": 79,
+  "UserPriority": 1,
+  "StartDate": "2020-5-1",
+  "Time": "11-00-00",
+  "Period": 120,
+  "RepeatEvery": [
+    "Su"
+  ],
+  "EndDate": "2020-5-30",
+  "Rules": [
+    {
+      "Ser_ID": 79,
+      "R_ID": 1,
+      "Priority": 3,
+      "RLoc": "Lab3",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab3_ICO2",
+          "operation": ">",
+          "value": 1000
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab3_BLabpower",
+          "value": "False"
+        }
+      ]
+    }
+  ]
+}

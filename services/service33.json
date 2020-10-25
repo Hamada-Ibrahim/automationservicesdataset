@@ -1,0 +1,38 @@
+{
+  "ServiceID": 33,
+  "UserID": 33,
+  "UserPriority": 1,
+  "StartDate": "2020-4-1",
+  "Time": "10-20-00",
+  "Period": 20,
+  "RepeatEvery": [
+    "Su",
+    "Tu"
+  ],
+  "EndDate": "2020-4-30",
+  "Rules": [
+    {
+      "Ser_ID": 33,
+      "R_ID": 1,
+      "Priority": 3,
+      "RLoc": "Office3",
+      "conditionGroup": [
+        {
+          "DeviceName": "Office3_ICO2",
+          "operation":">",
+          "value": 1000
+        },
+        {
+          "DeviceName": "Office3_BInfrared",
+          "value": "True"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Office3_BAC",
+          "value": "True"
+        }
+      ]
+    }
+  ]
+}

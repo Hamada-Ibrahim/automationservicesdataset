@@ -1,0 +1,34 @@
+{
+  "ServiceID": 31,
+  "UserID": 31,
+  "UserPriority": 1,
+  "StartDate": "2020-4-1",
+  "Time": "10-20-00",
+  "Period": 20,
+  "RepeatEvery": [
+    "Su",
+    "Tu"
+  ],
+  "EndDate": "2020-4-30",
+  "Rules": [
+    {
+      "Ser_ID": 31,
+      "R_ID": 1,
+      "Priority": 3,
+      "RLoc": "Office4",
+      "conditionGroup": [
+        {
+          "DeviceName": "Office4_IDevBatt",
+          "operation":"<",
+          "value": 100
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Office4_BDoor",
+          "value": "True"
+        }
+      ]
+    }
+  ]
+}

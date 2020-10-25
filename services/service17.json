@@ -1,0 +1,38 @@
+{
+  "ServiceID": 17,
+  "UserID": 17,
+  "UserPriority": 1,
+  "StartDate": "2020-4-1",
+  "Time": "10-20-00",
+  "Period": 20,
+  "RepeatEvery": [
+    "Su",
+    "Tu"
+  ],
+  "EndDate": "2020-4-30",
+  "Rules": [
+    {
+      "Ser_ID": 17,
+      "R_ID": 1,
+      "Priority": 3,
+      "RLoc": "Office1",
+      "conditionGroup": [
+        {
+          "DeviceName": "Office1_BInoffice",
+          "value": "True"
+        },
+        {
+          "DeviceName": "Office1_IInTemperature",
+          "operation": ">=",
+          "value": "75"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Office1_BFan",
+          "value": "True"
+        }
+      ]
+    }
+  ]
+}

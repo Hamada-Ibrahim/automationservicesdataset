@@ -1,0 +1,54 @@
+{
+  "ServiceID": 61,
+  "UserID": 61,
+  "UserPriority": 1,
+  "StartDate": "2020-1-1",
+  "Time": "10-00-00",
+  "Period": 30,
+  "RepeatEvery": [
+    "Sa",
+    "Tu",
+    "Th"
+  ],
+  "EndDate": "2020-2-1",
+  "Rules": [
+    {
+      "Ser_ID": 61,
+      "R_ID": 1,
+      "Priority": 3,
+      "RLoc": "Office5",
+      "conditionGroup": [
+        {
+          "DeviceName": "Office5_IIntemperature",
+          "operation": ">",
+          "value": 30
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Office5_BAC",
+          "value": "True"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 61,
+      "R_ID": 2,
+      "Priority": 2,
+      "RLoc": "Office5",
+      "conditionGroup": [
+        {
+          "DeviceName": "Office5_IIntemperature",
+          "operation": "<=",
+          "value": 20
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab2_BAC",
+          "value": "False"
+        }
+      ]
+    }
+  ]
+}

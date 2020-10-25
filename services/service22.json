@@ -1,0 +1,37 @@
+{
+  "ServiceID": 22,
+  "UserID": 22,
+  "UserPriority": 1,
+  "StartDate": "2020-4-1",
+  "Time": "10-20-00",
+  "Period": 20,
+  "RepeatEvery": [
+    "Su",
+    "Tu"
+  ],
+  "EndDate": "2020-4-30",
+  "Rules": [
+    {
+      "Ser_ID": 22,
+      "R_ID": 1,
+      "Priority": 3,
+      "RLoc": "Office5",
+      "conditionGroup": [
+        {
+          "DeviceName": "Office5_BAOccupancy",
+          "value": "True"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Office5_BALight",
+          "value": "False"
+        },
+        {
+          "DeviceName": "Office5_BWindow",
+          "value": "True"
+        }
+      ]
+    }
+  ]
+}

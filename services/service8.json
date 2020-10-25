@@ -1,0 +1,103 @@
+{
+  "ServiceID": 8,
+  "UserID": 8,
+  "UserPriority": 1,
+  "StartDate": "2020-4-1",
+  "Time": "10-20-00",
+  "Period": 20,
+  "RepeatEvery": [
+    "Su",
+    "Tu"
+  ],
+  "EndDate": "2020-4-30",
+  "Rules": [
+    {
+      "Ser_ID": 8,
+      "R_ID": 1,
+      "Priority": 3,
+      "RLoc": "Office4",
+      "conditionGroup": [
+        {
+          "DeviceName": "Office4_BInoffice",
+          "value": "True"
+        },
+        {
+          "DeviceName": "Office4_BDoor",
+          "value": "True"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Office4_BTextstate",
+          "value": "True"
+        }
+      ]
+    },
+    {
+     "Ser_ID": 8,
+      "R_ID": 2,
+      "Priority": 3,
+      "RLoc": "Office4",
+      "conditionGroup": [
+        {
+          "DeviceName": "Office4_BInoffice",
+          "value": "True"
+        },
+        {
+          "DeviceName": "Office4_BHeater",
+          "value": "True"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Office4_BTextstate",
+          "value": "True"
+        }
+      ]
+    },
+    {
+     "Ser_ID": 8,
+      "R_ID": 3,
+      "Priority": 3,
+      "RLoc": "Office4",
+      "conditionGroup": [
+        {
+          "DeviceName": "Office4_BInoffice",
+          "value": "True"
+        },
+        {
+          "DeviceName": "Office4_BAC",
+          "value": "True"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Office4_BTextstate",
+          "value": "True"
+        }
+      ]
+    },
+    {
+     "Ser_ID": 8,
+      "R_ID": 4,
+      "Priority": 3,
+      "RLoc": "Office4",
+      "conditionGroup": [
+        {
+          "DeviceName": "Office4_BInoffice",
+          "value": "True"
+        },
+        {
+          "DeviceName": "Office4_BLight",
+          "value": "True"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Office4_BTextstate",
+          "value": "True"
+        }
+      ]
+    } 
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "ServiceID": 45,
+  "UserID": 45,
+  "UserPriority": 1,
+  "StartDate": "2020-4-1",
+  "Time": "10-20-00",
+  "Period": 20,
+  "RepeatEvery": [
+    "Su",
+    "Tu"
+  ],
+  "EndDate": "2020-4-30",
+  "Rules": [
+    {
+      "Ser_ID": 45,
+      "R_ID": 1,
+      "Priority": 3,
+      "RLoc": "Office1",
+      "conditionGroup": [
+        {
+          "DeviceName": "Office1_BInoffice",
+          "value": "True"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Office1_BDoor",
+          "value": "False"
+        },
+        {
+          "DeviceName": "Office1_BSound",
+          "value": "False"
+        },
+        {
+          "DeviceName": "Office1_BWFO",
+          "value": "True"
+        }
+      ]
+    }
+  ]
+}

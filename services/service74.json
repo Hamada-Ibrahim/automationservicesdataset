@@ -1,0 +1,33 @@
+{
+  "ServiceID": 74,
+  "UserID": 74,
+  "UserPriority": 1,
+  "StartDate": "2020-4-1",
+  "Time": "10-20-00",
+  "Period": 10,
+  "RepeatEvery": [
+    "Mo"
+  ],
+  "EndDate": "2020-4-30",
+  "Rules": [
+    {
+      "Ser_ID": 74,
+      "R_ID": 1,
+      "Priority": 3,
+      "RLoc": "Hall1",
+      "conditionGroup": [
+        {
+          "DeviceName": "Hall1_IDev74",
+          "operation": "<",
+          "value": 20
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Hall1_IDev30",
+          "value": 15
+        }
+      ]
+    }
+  ]
+}

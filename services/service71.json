@@ -1,0 +1,38 @@
+{
+  "ServiceID": 71,
+  "UserID": 71,
+  "UserPriority": 1,
+  "StartDate": "2020-4-1",
+  "Time": "10-20-00",
+  "Period": 20,
+  "RepeatEvery": [
+    "Su",
+    "Tu"
+  ],
+  "EndDate": "2020-4-30",
+  "Rules": [
+    {
+      "Ser_ID": 71,
+      "R_ID": 1,
+      "Priority": 3,
+      "RLoc": "Lab1",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab1_BDev4",
+          "value": "False"
+        },
+        {
+          "DeviceName": "Lab1_IDev5",
+          "operation":"<",
+          "value": 5
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab1_BDev44",
+          "value": "False"
+        }
+      ]
+    }
+  ]
+}

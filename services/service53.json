@@ -1,0 +1,67 @@
+{
+  "ServiceID": 53,
+  "UserID": 53,
+  "UserPriority": 1,
+  "StartDate": "2020-3-1",
+  "Time": "12-00-00",
+  "Period": 70,
+  "RepeatEvery": [
+    "Su"
+  ],
+  "EndDate": "2020-3-2",
+  "Rules": [
+    {
+      "Ser_ID": 53,
+      "R_ID": 1,
+      "Priority": 3,
+      "RLoc": "Hall4",
+      "conditionGroup": [
+        {
+          "DeviceName": "Hall4_BInmeeting",
+          "value": "True"
+        },
+        {
+          "DeviceName": "Hall4_ILecdelay",
+          "operation": ">",
+          "value": 40
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Hall4_BStdnotify",
+          "value": "True"
+        },
+        {
+          "DeviceName": "Hall4_BLecstate",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "Ser_ID": 53,
+      "R_ID": 2,
+      "Priority": 2,
+      "RLoc": "Hall4",
+      "conditionGroup": [
+        {
+          "DeviceName": "Hall4_BInoffice",
+          "value": "False"
+        },
+        {
+          "DeviceName": "Hall4_BInmeeting",
+          "value": "True"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Hall4_BStdnotify",
+          "value": "True"
+        },
+        {
+          "DeviceName": "Hall4_ILecdelay",
+          "value": 20
+        }
+      ]
+    }
+  ]
+}

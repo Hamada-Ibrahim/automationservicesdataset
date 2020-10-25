@@ -1,0 +1,45 @@
+{
+  "ServiceID": 42,
+  "UserID": 42,
+  "UserPriority": 1,
+  "StartDate": "2020-4-1",
+  "Time": "10-20-00",
+  "Period": 20,
+  "RepeatEvery": [
+    "Su",
+    "Tu"
+  ],
+  "EndDate": "2020-4-30",
+  "Rules": [
+    {
+      "Ser_ID": 42,
+      "R_ID": 1,
+      "Priority": 3,
+      "RLoc": "Lab2",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab2_BLec",
+          "value": "True"
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab2_BWifi",
+          "value": "True"
+        },
+        {
+          "DeviceName": "Lab2_BLight",
+          "value": "True"
+        },
+        {
+          "DeviceName": "Lab2_BAudiosystem",
+          "value": "True"
+        },
+        {
+          "DeviceName": "Lab2_BVoicesystem",
+          "value": "True"
+        }
+      ]
+    }
+  ]
+}

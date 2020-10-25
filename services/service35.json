@@ -1,0 +1,42 @@
+{
+  "ServiceID": 35,
+  "UserID": 35,
+  "UserPriority": 1,
+  "StartDate": "2020-4-1",
+  "Time": "10-20-00",
+  "Period": 20,
+  "RepeatEvery": [
+    "Su",
+    "Tu"
+  ],
+  "EndDate": "2020-4-30",
+  "Rules": [
+    {
+      "Ser_ID": 35,
+      "R_ID": 1,
+      "Priority": 3,
+      "RLoc": "Lab1",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab1_BInfrared",
+          "value": "True"
+        },
+        {
+          "DeviceName": "Lab1_ICO2",
+          "operation":">",
+          "value": 1500
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab1_BWindow",
+          "value": "False"
+        },
+        {
+          "DeviceName": "Lab1_BAC",
+          "value": "True"
+        }
+      ]
+    }
+  ]
+}

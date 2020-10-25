@@ -1,0 +1,39 @@
+{
+  "ServiceID": 70,
+  "UserID": 70,
+  "UserPriority": 1,
+  "StartDate": "2020-4-1",
+  "Time": "10-20-00",
+  "Period": 20,
+  "RepeatEvery": [
+    "Su"
+  ],
+  "EndDate": "2020-4-30",
+  "Rules": [
+    {
+      "Ser_ID": 70,
+      "R_ID": 1,
+      "Priority": 3,
+      "RLoc": "Lab1",
+      "conditionGroup": [
+        {
+          "DeviceName": "Lab1_IDev3",
+          "Min": [
+            "10",
+            ">"
+          ],
+          "Max": [
+            "20",
+            "<="
+          ]
+        }
+      ],
+      "actionGroup": [
+        {
+          "DeviceName": "Lab1_IDev33",
+          "value": 15
+        }
+      ]
+    }
+  ]
+}
