@@ -1,0 +1,27 @@
+{
+  "Policy_ID": 7,
+  "UserID": 70,
+  "Constraints": [
+    {
+      "P_ID": 1,
+      "PLoc": "Office5",
+      "operatorGroup": {
+                        "deviceGroup": [
+                                        {
+                                          "DeviceName": "Office5_BAlarmSystem",
+                                          "value": "True"
+                                        },                                
+                                        {
+                                          "DeviceName": "Office5_BFireextinguisher",
+                                          "value": "True"
+                                        },                                
+                                        {
+                                          "DeviceName": "Office5_BInfrared",
+                                          "value": "False"
+                                        }
+                                       ],
+                        "Operator": "&"
+                       }
+    }
+  ]
+}

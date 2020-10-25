@@ -1,0 +1,33 @@
+{
+  "Policy_ID": 16,
+  "UserID": 1616,
+  "Constraints": [
+    {
+      "P_ID": 1,
+      "PLoc": "Lab1",
+      "operatorGroup": {
+                        "deviceGroup": [
+                                        {
+                                          "DeviceName": "Lab1_BDev11",
+                                          "value": "True"
+                                        },
+                                        {
+                                          "DeviceName": "Lab1_BDev22",
+                                          "value": "True"
+                                        },
+                                        {
+                                          "DeviceName": "Lab1_BDev44",
+                                          "value": "False"
+                                        },
+                                        {
+                                          "DeviceName":"Lab1_BDev33",
+                                          "operation":"=",
+                                          "value": 15 	
+                                        }
+                                       ],
+                        "Operator": "&",
+                        "Negation": "!"
+                       }
+    }
+  ]
+}

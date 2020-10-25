@@ -1,0 +1,23 @@
+{
+  "Policy_ID": 5,
+  "UserID": 50,
+  "Constraints": [
+    {
+      "P_ID": 1,
+      "PLoc": "Office2",
+      "operatorGroup": {
+                        "deviceGroup": [
+                                        {
+                                          "DeviceName": "Office2_BInfrared",
+                                          "value": "False"
+                                        },                                
+                                        {
+                                          "DeviceName": "Office2_BModeAway",
+                                          "value": "True"
+                                        }
+                                       ],
+                        "Operator": "&"
+                       }
+    }
+  ]
+}

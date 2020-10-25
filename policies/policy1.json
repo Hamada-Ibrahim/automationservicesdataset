@@ -1,0 +1,24 @@
+{
+  "Policy_ID": 1,
+  "UserID": 100,
+  "Constraints": [
+    {
+      "P_ID": 1,
+      "PLoc": "Office5",
+      "operatorGroup": {
+                        "deviceGroup": [
+                                        {
+                                          "DeviceName": "Office5_BWindow",
+                                          "value": "True"
+                                        },
+                                        {
+                                          "DeviceName": "Office5_BAC",
+                                          "value": "True"
+                                        }
+                                       ],
+                        "Operator": "&",
+                        "Negation": "!"
+                       }
+    }
+  ]
+}

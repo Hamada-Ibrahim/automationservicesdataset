@@ -1,0 +1,23 @@
+{
+  "Policy_ID": 11,
+  "UserID": 111,
+  "Constraints": [
+    {
+      "P_ID": 1,
+      "PLoc": "Lab4",
+      "operatorGroup": {
+                        "deviceGroup": [
+                                        {
+                                          "DeviceName": "Lab4_BSeccamera",
+                                          "value": "True"
+                                        },                                
+                                        {
+                                          "DeviceName": "Lab4_BInfrared",
+                                          "value": "False"
+                                        }
+                                       ],
+                        "Operator": "&"
+                       }
+    }
+  ]
+}

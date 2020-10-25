@@ -1,0 +1,13 @@
+{
+  "Policy_ID": 13,
+  "UserID": 131,
+  "Constraints": [
+    {
+      "P_ID": 1,
+      "PLoc": "Office3",
+      "DeviceName": "Office3_ICO2",
+      "operation": "<=",
+      "value": 1000
+    }
+  ]
+}

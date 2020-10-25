@@ -1,0 +1,19 @@
+{
+  "Policy_ID": 3,
+  "UserID": 30,
+  "Constraints": [
+    {
+      "P_ID": 1,
+      "PLoc": "Lab1",
+      "DeviceName": "Lab1_IInTemperature",
+      "Min": [
+        "22",
+        ">"
+      ],
+      "Max": [
+        "27",
+        "<"
+      ]
+    }
+  ]
+}

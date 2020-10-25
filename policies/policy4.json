@@ -1,0 +1,23 @@
+{
+  "Policy_ID": 4,
+  "UserID": 40,
+  "Constraints": [
+    {
+      "P_ID": 1,
+      "PLoc": "Office3",
+      "operatorGroup": {
+                        "deviceGroup": [
+                                        {
+                                          "DeviceName": "Office3_BInfrared",
+                                          "value": "False"
+                                        },                                
+                                        {
+                                          "DeviceName": "Office3_BDoor",
+                                          "value": "False"
+                                        }
+                                       ],
+                        "Operator": "&"
+                       }
+    }
+  ]
+}

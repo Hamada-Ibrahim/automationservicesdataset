@@ -1,0 +1,28 @@
+{
+  "Policy_ID": 12,
+  "UserID": 121,
+  "Constraints": [
+    {
+      "P_ID": 1,
+      "PLoc": "Office1",
+      "operatorGroup": {
+                        "deviceGroup": [
+                                        {
+                                          "DeviceName": "Office1_BDev1",
+                                          "value": "True"
+                                        },
+                                        {
+                                          "DeviceName": "Office1_BDev2",
+                                          "value": "True"
+                                        },
+                                        {
+                                          "DeviceName": "Office1_BDev3",
+                                          "value": "True"
+                                        }
+                                       ],
+                        "Operator": "&",
+                        "Negation": "!"
+                       }
+    }
+  ]
+}

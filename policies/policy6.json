@@ -1,0 +1,23 @@
+{
+  "Policy_ID": 6,
+  "UserID": 60,
+  "Constraints": [
+    {
+      "P_ID": 1,
+      "PLoc": "Office1",
+      "operatorGroup": {
+                        "deviceGroup": [
+                                        {
+                                          "DeviceName": "Office1_BAlarm",
+                                          "value": "True"
+                                        },                                
+                                        {
+                                          "DeviceName": "Office1_BSmoke",
+                                          "value": "True"
+                                        }
+                                       ],
+                        "Operator": "&"
+                       }
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "Policy_ID": 2,
+  "UserID": 20,
+  "Constraints": [
+    {
+      "P_ID": 1,
+      "PLoc": "Hall1",
+      "operatorGroup": {
+                        "deviceGroup": [
+                                        {
+                                          "DeviceName": "Hall1_BWindow",
+                                          "value": "False"
+                                        },
+                                        {
+                                          "DeviceName": "Hall1_BCurtain",
+                                          "value": "False"
+                                        },
+                                        {
+                                          "DeviceName": "Hall1_BDatashow",
+                                          "value": "True"
+                                        }
+                                       ],
+                        "Operator": "&"
+                       }
+    }
+  ]
+}

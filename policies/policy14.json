@@ -1,0 +1,13 @@
+{
+  "Policy_ID": 14,
+  "UserID": 141,
+  "Constraints": [
+    {
+      "P_ID": 1,
+      "PLoc": "Lab3",
+      "DeviceName": "Lab3_IStudentcount",
+      "operation": "<=",
+      "value": 25
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "Policy_ID": 9,
+  "UserID": 90,
+  "Constraints": [
+    {
+      "P_ID": 1,
+      "PLoc": "Hall3",
+      "DeviceName": "Hall3_IDevBatt",
+      "operation": ">",
+      "value": 100
+    }
+  ]
+}
